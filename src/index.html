@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>mob-programming</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>mob-programming</section>
+				<section>
+					<p>was ist es</p>
+					<ul>
+						<li class="fragment fade-in">ganzes team 'paired', arbeitet also gemeinsam an einem rechner / monitor / keyboard</li>
+					</ul>
+				</section>
+				<section>
+					<p>experiment</p>
+					<ul>
+						<li class="fragment fade-in">wir haben es für etwa 6 wochen ausprobiert</li>
+						<li class="fragment fade-in">meetingraum mit grossem fernseher</li>
+						<aside class="notes">
+							(stand aber auf dem tisch, nicht an der wand)
+						</aside>
+						<li class="fragment fade-in">'normales' scrum mit 2-wochen-sprints, gemeinsames planning & commitment</li>
+					</ul>
+				</section>
+				<section>
+					<p>disclaimer</p>
+					<ol>
+						<li class="fragment fade-in">wir haben es wieder sein lassen</li>
+						<li class="fragment fade-in">kunde war dm, das team hat dort vorher schon 'narrenfreiheit' gehabt</li>
+						<li class="fragment fade-in">vertrauen vom 'kunden' ist seitdem eher gewachsen</li>
+					</ol>
+				</section>
+				<section>
+					<p>erfahrungen</p>
+					<ol>
+						<li class="fragment fade-in">ein paar regeln sind notwendig</li>
+						<li class="fragment fade-in">zu strikter prozess schadet aber auch</li>
+						<li class="fragment fade-in">rückzugsorte notwendig</li>
+					</ol>
+				</section>
+				<section>
+					<p>unser regelset</p>
+					<ul>
+						<li class="fragment fade-in">timer mit 10 minuten, danach darf nur noch die zeile o.ä. fertig getippt werden</li>
+						<li class="fragment fade-in">mac os, kabellose maus & tastatur</li>
+						<li class="fragment fade-in">der mob läuft immer, auch wenn nur zwei leute da sind</li>
+					</ul>
+				</section>
+				<section>
+					<p>ausnahmen</p>
+					<ul>
+						<li class="fragment fade-in">wenn jemand einen termin hat, klinkt er sich aus und kommt später wieder dazu</li>
+						<li class="fragment fade-in">wenn jemand grad keine lust auf mob hat, kann er sich auch mal für ein paar stunden rausziehen</li>
+						<li class="fragment fade-in">code wird ggf. später gemeinsam im mob gemerged</li>
+					</ul>
+				</section>
+				<section>
+					<p>fazit</p>
+					<ul>
+						<li class="fragment fade-in">super tool zur wissensverteilung</li>
+						<li class="fragment fade-in">velocity ist etwa gleich geblieben</li>
+						<li class="fragment fade-in">deutlich weniger slack als erwartet</li>
+						<aside class="notes">
+							(wer grad nur auf seinem handy rumdrückt, würde vermutlich auch nix sinnvolles machen, wenn er alleine oder im pair arbeiten würde)
+						</aside>
+						<li class="fragment fade-in">vertrauen muss da sein! vom kunden & untereinander im team</li>
+					</ul>
+				</section>
+				<section data-background-image="bergwerk.jpg">
+					<p>fragen?</p>
+				</section>
+				<!--
+				mob programming
+
+* was ist es
+** ganzes team 'paired', arbeitet also gemeinsam an einem rechner / monitor / keyboard
+
+* erfahrungen
+** wir haben es für etwa 6 wochen ausprobiert
+** disclaimer: wir haben es aber auch wieder sein lassen
+** meetingraum mit grossem fernseher (stand aber auf dem tisch, nicht an der wand)
+** 'normales' scrum mit 2-wochen-sprints, gemeinsames planning & commitment
+** disclaimer 2: kunde war dm, das team hat dort vorher schon 'narrenfreiheit' gehabt
+** disclaimer 3: vertrauen vom 'kunden' ist seitdem eher gewachsen
+
+* unser regelset
+** timer mit 10 minuten, danach darf nur noch die zeile o.ä. fertig getippt werden
+** mac os, kabellose maus & tastatur
+** der mob läuft immer, auch wenn nur zwei leute da sind
+** wenn jemand einen termin hat, klinkt er sich aus und kommt später wieder dazu
+** wenn jemand grad keine lust auf mob hat, kann er sich auch mal für ein paar stunden rausziehen, code wird ggf. später gemeinsam im mob gemerged
+
+* fazit
+** super tool zur wissensverteilung
+** deutlich weniger slack als erwartet
+*** wer nur auf seinem handy rumdrückt, würde vermutlich auch nix sinnvolles machen, wenn er alleine oder im pair arbeiten würde
+				-->
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
